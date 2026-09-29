@@ -11,21 +11,22 @@ function startSurprise() {
     let music = document.getElementById("music");
     music.play();
 
-    for (let i = 0; i < 100; i++) {
+    let count = window.innerWidth < 600 ? 50 : 100;
+
+    for (let i = 0; i < count; i++) {
         let span = document.createElement("span");
         span.innerHTML = "🎀⭐✨🎊";
         span.style.position = "absolute";
-        span.style.left = Math.random() * window.innerWidth + "px";
+        span.style.left = Math.random() * (window.innerWidth - 40) + "px";
         span.style.top = "-50px";
-        span.style.fontSize = "30px";
-        span.style.animation = `fall ${3 + Math.random()*3}s linear`;
+        span.style.fontSize = window.innerWidth < 600 ? "18px" : "30px";
+        span.style.animation = `fall ${2 + Math.random()*4}s linear`;
         document.body.appendChild(span);
     }
 
     setTimeout(() => {
         document.getElementById("page4").innerHTML += `
-            <!-- اینجا لینک عکس کیک رو می‌تونی عوض کنی -->
-            <img src="https://pngimg.com/uploads/birthday_cake/birthday_cake_PNG13190.png" width="300">
+            <img src>"https://github.com/Saba8620ze/happy-birthday-surprise/blob/f5543f8314905bbf5bc9d6e4043b05eb0f23fff7/IMG_20260929_141015_890.jpg?raw=true" width="300">
             <h2>تولدت مبارک عزیزم! 🥹 🎂🤍</h2>
             <button onclick="goToPage(5)">ادامه</button>
         `;
