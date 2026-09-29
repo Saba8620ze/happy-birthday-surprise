@@ -32,4 +32,3 @@ function startSurprise() {
         `;
     }, 6000);
 }
-
