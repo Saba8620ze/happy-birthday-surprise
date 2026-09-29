@@ -26,7 +26,7 @@ function startSurprise() {
 
     setTimeout(() => {
         document.getElementById("page4").innerHTML += `
-            <img src="https://github.com/Saba8620ze/happy-birthday-surprise/blob/f5543f8314905bbf5bc9d6e4043b05eb0f23fff7/IMG_20260929_141015_890.jpg?raw=true " width="300">
+            <img src="https://github.com/Saba8620ze/happy-birthday-surprise/blob/f5543f8314905bbf5bc9d6e4043b05eb0f23fff7/IMG_20260929_141015_890.jpg?raw=true" width="300">
             <h2>تولدت مبارک عزیزم! 🥹 🎂🤍</h2>
             <button onclick="goToPage(5)">ادامه</button>
         `;
